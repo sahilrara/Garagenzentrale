@@ -1,0 +1,41 @@
+:root {
+    --color-086dac: #086dac;
+    --color-fff: #ffff;
+    --color-000: #000;
+    --color-2b2b2b: #2b2b2b;
+    --font-18: 18px;
+    --font-65: 65px;
+    --font-20: 20px;
+    --font-22: 22px;
+    --font-42: 42px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    :root {
+        --font-18: 16px;
+        --font-65: 55px;
+        --font-20: 18px;
+        --font-22: 20px;
+        --font-42: 37px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    :root {
+        --font-18: 15px;
+        --font-65: 45px;
+        --font-20: 16px;
+        --font-22: 18px;
+        --font-42: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --font-18: 14px;
+        --font-65: 30px;
+        --font-20: 14px;
+        --font-22: 16px;
+        --font-42: 28px;
+    }
+}
