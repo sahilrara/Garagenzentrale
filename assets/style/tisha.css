@@ -23,28 +23,28 @@ body {
 }
 
 .color-086dac {
-  color: var(--color-086dac);
+  color: var(--color-086dac) !important;
 }
 .color-fff {
-  color: var(--color-fff);
+  color: var(--color-fff) !important;
 }
 .color-000 {
-  color: var(--color-000);
+  color: var(--color-000) !important;
 }
 .color-707070 {
-  color: var(--color-707070);
+  color: var(--color-707070) !important;
 }
 .color-e31919 {
-  color: var(--color-e31919);
+  color: var(--color-e31919) !important;
 }
 .color-c6c6c6 {
-  color: var(--color-c6c6c6);
+  color: var(--color-c6c6c6) !important;
 }
 .color-2b2b2b {
-  color: var(--color-2b2b2b);
+  color: var(--color-2b2b2b) !important;
 }
 .bg-2b2b2b {
-  background: var(--color-2b2b2b);
+  background: var(--color-2b2b2b) !important;
 }
 .heading {
   font-weight: 700;
