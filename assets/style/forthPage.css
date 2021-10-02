@@ -58,3 +58,17 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+/*============== map ========== */
+/* @media (max-width:575.98px) {
+  .map-setup {
+    height: 450px !important;
+  }
+} */
+
+/* 
+@media (min-width:576px) and (max-width:768.98px) {
+  .map-setup {
+    max-height: 550px;
+  }
+} */
