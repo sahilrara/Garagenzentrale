@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+
+    <link rel="stylesheet" href="./assets/style/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <title>GaragenZentrale</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 position-relative active-image-container ps-0">
+                    <div class="slider slider-for">
+                        <div class="main-image-container">
+                            <img class="main-image" src="./assets/img/garage-1.png" alt="active-img">
+                        </div>
+                        <div class="main-image-container">
+                            <img class="main-image" src="./assets/img/garage-2.png" alt="active-img">
+                        </div>
+                        <div class="main-image-container">
+                            <img class="main-image" src="./assets/img/garage-3.png" alt="active-img">
+                        </div>
+                        <div class="main-image-container">
+                            <img class="main-image" src="./assets/img/garage-4.png" alt="active-img">
+                        </div>
+                        <div class="main-image-container">
+                            <img class="main-image" src="./assets/img/garage-5.png" alt="active-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 position-relative pt-5 text-end pe-5">
+                    <div class="content pt-5 pe-5">
+                        <h1 class="heading-large mb-4">
+                            Mehr als nur eine Garage
+                        </h1>
+                        <p>
+                            Interior Design is the definitive resource for interior designers, architects and other
+                            design
+                            pros,
+                            featuring
+                            groundbreaking projects.
+                        </p>
+                    </div>
+                    <div class="thumbnail-container ps-5">
+                        <ul class="track pt-5 slider slider-nav">
+                            <li class="thumbnail">
+                                <img src=" ./assets/img/garage-1.png" alt="image">
+                            </li>
+                            <li class=" thumbnail">
+                                <img src="./assets/img/garage-2.png" alt="image">
+                            </li>
+                            <li class=" thumbnail">
+                                <img src="./assets/img/garage-3.png" alt="image">
+                            </li>
+                            <li class=" thumbnail">
+                                <img src="./assets/img/garage-4.png" alt="image">
+                            </li>
+                            <li class=" thumbnail">
+                                <img src="./assets/img/garage-5.png" alt="image">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" numbers action">
+                        <a href=# class="active" data-slide="1">01</a>
+                        <a href=# data-slide="2">02</a>
+                        <a href=# data-slide="3">03</a>
+                        <a href=# data-slide="4">04</a>
+                        <a href=# data-slide="5">05</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-black">
+                <div class="col-12 bottom-info-container">
+                    <div class="row bottom-info p-5">
+                        <div class="col-4 info">Eigene Produktionsstätte im schönen Brandenburg</div>
+                        <div class="col-4 info">Ausgezeichneter Service</div>
+                        <div class="col-4 info">Kompetente Beratung</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+    <script>
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            arrows: false,
+            dots: false,
+            focusOnSelect: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+
+
+        $('a[data-slide]').click(function (e) {
+            e.preventDefault();
+            var slideno = $(this).data('slide');
+            $('.slider-nav').slick('slickGoTo', slideno - 1);
+            $('.active').removeClass('active')
+            $(this).addClass('active')
+        });
+    </script>
+</body>
+
+</html>
