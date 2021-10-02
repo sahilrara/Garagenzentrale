@@ -138,7 +138,7 @@ body {
 
 @media (max-width: 576px) {
     :root {
-        --font-65: 28px !important;
+        --font-65: 26px !important;
         --font-24: 16px;
     }
 }
