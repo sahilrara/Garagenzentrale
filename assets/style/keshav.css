@@ -30,6 +30,10 @@ body {
     background-color: var(--color-086dac);
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: none !important;
+}
+
 .nav-li-text {
     font-size: var(--font-18);
     font-weight: 500;
