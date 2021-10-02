@@ -36,6 +36,10 @@ body {
     color: var(--color-CEE2EE) !important;
 }
 
+.nav-li-text:hover {
+    color: var(--color-fff) !important;
+}
+
 .nav-item .active {
     font-weight: bold;
     color: var(--color-fff) !important;
@@ -51,8 +55,8 @@ body {
     border-color: transparent;
 }
 
-.me-35 {
-    margin-right: 35px;
+.me-24 {
+    margin-right: 24px;
 }
 
 .hero-section-bg-img {
@@ -150,7 +154,7 @@ body {
 }
 
 @media (min-width: 1600px) {
-    .me-xl-35 {
+    .me-xl-63 {
         margin-right: 63px;
     }
 }
