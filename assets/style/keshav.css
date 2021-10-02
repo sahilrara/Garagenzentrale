@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-CEE2EE: #CEE2EE;
+    --font-24: 24px;
+    --font-28: 28px;
+    --font-16: 16px;
+}
+
+.nav-bg {
+    background-color: var(--color-086dac);
+}
+
+.Anfrage-btn {
+    font-weight: 700;
+    font-size: var(--font-18);
+    color: var(--color-086dac);
+    padding: 19px 42px;
+    background-color: var(--color-fff);
+    border: 2px solid var(--color-fff);
+    transition: all 0.4s ease-in-out;
+}
+
+.Anfrage-btn:hover {
+    color: var(--color-fff);
+    background-color: var(--color-086dac);
+}
+
+.nav-li-text {
+    font-size: var(--font-18);
+    font-weight: 500;
+    color: var(--color-CEE2EE) !important;
+}
+
+.nav-item .active {
+    font-weight: bold;
+    color: var(--color-fff) !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.navbar-toggler:focus {
+    color: transparent;
+    border-color: transparent;
+}
+
+.me-35 {
+    margin-right: 35px;
+}
+
+.hero-section-bg-img {
+    background-image: url('../img/Hero-common-section-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section-subheading {
+    font-weight: 600;
+    font-size: var(--font-24);
+    color: var(--color-fff);
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: var(--font-65);
+    color: var(--color-fff);
+}
+
+.cards-paddings {
+    padding: 50px 40px;
+    background-color: var(--color-086dac);
+}
+
+.card-heading {
+    font-weight: bold;
+    font-size: var(--font-28);
+    color: var(--color-fff);
+}
+
+.card-subheading {
+    font-weight: bold;
+    font-size: var(--font-22);
+    color: var(--color-fff);
+}
+
+.card-line::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 3px;
+    background-color: var(--color-fff);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-para {
+    font-weight: 500;
+    font-size: var(--font-16);
+    color: var(--color-fff);
+}
+
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 25px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    color: transparent;
+    left: 0;
+    border: 3px solid black;
+    height: 20px;
+    border-radius: 50%;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: transparent;
+}
+
+.slick-list {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+    :root {
+        --font-65: 26px !important;
+        --font-24: 16px;
+    }
+}
+
+@media (min-width: 576px) {
+    .nav-logo-padding {
+        padding: 41px 87px !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .me-xl-35 {
+        margin-right: 63px;
+    }
+}
