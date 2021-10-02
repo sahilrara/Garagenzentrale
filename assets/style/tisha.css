@@ -9,14 +9,17 @@ body {
   --color-e31919: #e31919;
   --color-c6c6c6: #c6c6c6;
 }
-.mw-1002 {
-  max-width: 1002px;
+.mw-1166 {
+  max-width: 1166px;
 }
 .mw-1148 {
   max-width: 1148px;
 }
 .mw-234 {
   max-width: 234px;
+}
+.mw-270 {
+  max-width: 270px;
 }
 .mw-547 {
   max-width: 547px;
@@ -81,6 +84,14 @@ input:focus-visible {
   box-shadow: none;
   outline: none;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 ::placeholder {
   color: var(--color-c6c6c6) !important;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --font-22: 19px;
+  }
 }
