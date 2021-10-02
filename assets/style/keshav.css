@@ -30,6 +30,10 @@ body {
     background-color: var(--color-086dac);
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: none !important;
+}
+
 .nav-li-text {
     font-size: var(--font-18);
     font-weight: 500;
@@ -55,8 +59,8 @@ body {
     border-color: transparent;
 }
 
-.me-24 {
-    margin-right: 24px;
+.me-23 {
+    margin-right: 23px;
 }
 
 .hero-section-bg-img {
