@@ -293,7 +293,7 @@
 
 /* FOOTER CSS */
 .para {
-    font-size: var(--font-18);
+    font-size: var(--font-20) !important;
     color: var(--color-2b2b2b);
 }
 
@@ -324,6 +324,44 @@
     font-weight: 700;
     color: var(--color-fff);
 }
+
+.footer-heading:hover {
+    color: var(--color-000);
+    transition: all 0.4s ease-in-out;
+}
+
+.cursor-pointer:hover div svg path {
+    fill: black !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.cursor-pointer:hover div p {
+    transition: all 0.4s ease-in-out;
+    color: black !important;
+}
+
+.tel-hover:hover svg path {
+    fill: black !important;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.time-hover:hover p {
+    transition: all 0.4s ease-in-out;
+    color: black !important;
+}
+
+.tel-hover:hover a {
+    transition: all 0.4s ease-in-out;
+    color: black !important;
+}
+
+.footer-para a:hover {
+    color: var(--color-000) !important;
+    transition: all 0.4s ease-in-out;
+
+}
+
 
 .footer-para {
     font-size: var(--font-18);
