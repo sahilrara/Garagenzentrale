@@ -61,22 +61,7 @@
   }
 }
 /* GESCHAFTSBEDING CAROUSEL */
-@media (min-width: 576px) and (max-width: 1199.98px) {
-  #vmap {
-    width: 100%;
-    height: 512px;
-  }
-  #dis-none {
-    display: none;
-  }
-}
 
-@media (min-width: 1400px) {
-  #vmap {
-    height: 951.14px;
-    width: 100%;
-  }
-}
 /* GESCHAFTSBEDING  CAROUSEL */
 
 /* NAVBAR CSS */
@@ -1179,6 +1164,39 @@ input[type="email"] {
 }
 
 /* kunden */
+.slick-prev {
+  display: none !important;
+}
+.slick-next {
+  display: none !important;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center !important;
+}
+.carousel .slick-dots li button {
+  border-radius: 50% !important;
+  border: 3px solid #2b2b2b !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  width: 25px !important;
+  height: 25px !important;
+  color: transparent !important;
+  margin: 10px;
+}
+.carousel li {
+  color: transparent;
+}
+.carousel .slick-dots .slick-active button {
+  background-color: black !important;
+}
+@media (min-width: 768px) {
+  .carousel .multiple-items {
+    padding-bottom: 133px;
+  }
+}
+
 .Kunden-text {
   color: #000;
   font-size: var(--font-42);
@@ -1186,6 +1204,12 @@ input[type="email"] {
 
 .card-bg {
   background-color: var(--color-086dac);
+}
+
+@media (min-width: 576px) and(max-width: 767.98px) {
+  .card-bg {
+    width: 350px !important;
+  }
 }
 
 .familie-text {
@@ -1203,7 +1227,6 @@ input[type="email"] {
 
 .carousel .multiple-items {
   margin-top: 70px;
-  margin-bottom: 133px !important;
 }
 
 .carousel .slick-dots li button:before {
@@ -1443,6 +1466,24 @@ input[type="email"] {
 }
 
 /* map */
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  #vmap {
+    width: 100%;
+    height: 512px;
+  }
+  #dis-none {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  #vmap {
+    height: 951.14px;
+    width: 100%;
+  }
+}
+
 .jqvmap-label {
   position: absolute;
   display: none;
@@ -1499,3 +1540,83 @@ input[type="email"] {
   width: 100%;
   height: 500px;
 }
+
+/* Ravi sir Css start here  */
+
+.hero-slider .main-slider {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-slider .slider-hero-for .slide {
+  width: 100%;
+  height: 700px;
+}
+
+.hero-slider .slider-hero-for .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-slider .slider-hero-nav img {
+  height: 100px;
+  width: 120px;
+}
+
+.hero-slider .slider-hero-nav .slick-current {
+  display: none;
+}
+
+.hero-slider .slider-hero-nav .slick-current + img {
+  height: 150px;
+}
+
+.hero-slider .slider-hero-nav [aria-live="polite"] {
+  margin-left: -200px;
+}
+
+.hero-slider .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.hero-slider .slider-hero-nav .slick-track img {
+  margin-right: 2rem !important;
+  border-radius: 1rem !important;
+  transition: unset !important;
+  cursor: pointer !important;
+}
+
+.hero-slider .slider-hero-nav .slick-track img:hover {
+  transform: unset !important;
+}
+
+.hero-slider .slick-dots {
+  list-style-type: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: end !important;
+  min-height: 200px !important;
+}
+
+.hero-slider .slick-dots button {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  border-bottom: 2px solid black !important;
+  padding-bottom: 0px !important;
+  transition: 0.2s linear !important;
+  color: #2b2b2b !important;
+  padding-inline: 5px !important;
+  font-weight: bold !important;
+}
+
+.hero-slider .slick-dots .slick-active button {
+  font-size: 80px !important;
+  font-weight: bold !important;
+  border-bottom: none !important;
+  margin-inline: 10px !important;
+}
+
+/* Ravi sir Css end here  */
