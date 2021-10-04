@@ -1260,15 +1260,9 @@ input[type="email"] {
     background: #2b2b2b;
 }
 
-@media (min-width:991px) {
-    .bottom-info-container {
-        height: 104px;
-    }
-}
 
-.bottom-info-container {
-    width: 55%;
-}
+
+
 
 .bottom-info {
     background: #086dac;
@@ -1545,7 +1539,6 @@ input[type="email"] {
 
 .hero-slider .slider-hero-nav img {
     height: 152px;
-    width: 210px !important;
 
 }
 
@@ -1562,26 +1555,11 @@ input[type="email"] {
     width: 280px !important;
 }
 
-.hero-slider .slider-hero-nav [aria-live=polite] {
-    margin-left: -200px;
-}
-
-
-.hero-slider .slick-track {
-    display: flex;
-    align-items: center;
-}
-
 .hero-slider .slider-hero-nav .slick-track img {
     margin-right: 2rem !important;
     border-radius: 1rem !important;
     transition: unset !important;
     cursor: pointer !important;
-
-}
-
-.hero-slider .slider-hero-nav .slick-track img:hover {
-    transform: unset !important;
 
 }
 
@@ -1592,6 +1570,22 @@ input[type="email"] {
     justify-content: end !important;
     min-height: 200px !important;
 }
+
+
+
+
+.hero-slider .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-slider .slider-hero-nav .slick-track img:hover {
+    transform: unset !important;
+
+}
+
+
 
 .hero-slider .slick-dots button {
     border: none !important;
@@ -1614,6 +1608,86 @@ input[type="email"] {
 
 .slider-hero-nav .slick-list {
     padding-bottom: 0px !important;
+}
+
+@media (min-width: 1399.98px) {
+    .hero-slider .slider-hero-nav [aria-live=polite] {
+        margin-left: -200px;
+    }
+
+    .bottom-info-container {
+        width: 55%;
+    }
+
+    .bottom-info-container {
+        height: 80px;
+    }
+
+    .mt-xxl_100 {
+        margin-top: -100px;
+    }
+
+    .mt-lg_10 {
+        margin-top: -10px !important;
+    }
+
+    .position-xxl-absolute {
+        position: absolute;
+    }
+
+    .bg-xxl-black {
+        background: #2b2b2b;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .hero-header {
+        justify-content: center;
+    }
+
+    .hero-header h1 {
+        max-width: 100%;
+    }
+
+    .hero-para {
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .hero-slider .slick-dots {
+        justify-content: center !important;
+    }
+
+    .hero-slider .slider-hero-nav .slick-current+img {
+        width: 500px !important;
+        height: 350px !important;
+    }
+
+    .hero-slider .slider-hero-nav img {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .hero-slider .slider-hero-nav .slick-current+img {
+        width: 200px !important;
+        height: 150px !important;
+    }
+
+    .hero-slider .slider-hero-nav img {
+        height: 120px;
+        width: 190px;
+    }
+
+    .hero-slider .slick-dots .slick-active button {
+        font-size: 45px !important;
+    }
+
+    .hero-slider .slick-dots {
+        min-height: 75px !important;
+    }
 }
 
 /* Ravi sir Css end here  */

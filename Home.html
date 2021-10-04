@@ -78,7 +78,7 @@
     <section class="hero-slider">
         <div class="container-fluid p-0">
             <div class="row g-0 mt-5">
-                <div class="col-8">
+                <div class="col-xxl-8 col-xl-6 pe-3 pe-xxl-0 d-none d-xl-block">
                     <div class="main-slider">
                         <div class="slider slider-hero-for">
                             <div class="slide">
@@ -99,14 +99,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 pe-5">
+                <div class="col-xxl-4 col-xl-6  pe-xxl-5 pe-sm-3">
                     <div class="main-content text-end">
                         <div class="hero-header">
                             <h1 class="fs-65  fw-700  ">
                                 Mehr als nur eine Garage
                             </h1>
                         </div>
-                        <div class="d-flex justify-content-lg-end">
+                        <div class="d-flex justify-content-xl-end justify-content-center">
                             <p class="fs-18 fw-400 hero-para">
                                 Interior Design is the definitive resource for interior designers, architects and other
                                 design
@@ -125,12 +125,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row bg-black mt_100">
+            <div class="row bg-xxl-black g-0  mt-xxl_100">
                 <div class="col-12 bottom-info-container position-relative">
-                    <div class="row g-4 bottom-info position-lg-absolute py-3 p-lg-5">
-                        <div class="col-md-4 col-12 info">Eigene Produktionsstätte im schönen Brandenburg</div>
-                        <div class="col-md-4 col-12 info">Ausgezeichneter Service</div>
-                        <div class="col-md-4 col-12 info">Kompetente Beratung</div>
+                    <div class="row g-0 bottom-info position-xxl-absolute py-3 p-lg-5">
+                        <div class="col-lg-4 col-md-6 col-12 info">Eigene Produktionsstätte im schönen Brandenburg</div>
+                        <div class="col-lg-4 col-md-6 col-12 info">Ausgezeichneter Service</div>
+                        <div class="col-lg-4 col-12 mt-5 mt-lg-0 info">Kompetente Beratung</div>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
     </section>
 
     <!-- Muskan Mam -->
-    <div class="noch-bg py-lg-5 py-2 mt_10">
+    <div class="noch-bg py-lg-5 py-2 mt-5 mt-xlg-0 mt-lg_10 ">
         <div class="container ">
             <div class="row">
                 <div class="col-xxl-6">
@@ -844,8 +844,10 @@
             $('.slider-hero-for').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                infinite: true,
+
                 arrows: false,
-                autoplay: false,
+                autoplay: true,
                 duration: 2000,
                 asNavFor: '.slider-hero-nav'
             });
@@ -855,6 +857,8 @@
                 asNavFor: '.slider-hero-for',
                 dots: true,
                 arrows: false,
+                infinite: true,
+                autoplay: true,
                 centerMode: false,
                 focusOnSelect: true
             });
